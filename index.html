@@ -14,6 +14,7 @@
     <p>Tämä on vaan testailua ja kivaa</p>
     <p id="paivays"></p>
     <button onclick="changeTextColor(this)">Vaihda väriä</button>  
+    <button onclick="vaihdaVari()">Vaihda tekstin väriä</button>
     <script>
         const pvm = new Date();
         document.getElementById("paivays").innerHTML = pvm;
@@ -21,18 +22,12 @@
         function changeTextColor(button) {
             // Muuttaa painikkeen sisällä olevan tekstin värin punaiseksi
             button.style.color = 'red';
-    }
-    </script>
-     
-
-  <button onclick="vaihdaVari()">Vaihda tekstin väriä</button>
-
-  <script>
+        }
    
-    function vaihdaVari() {
-    
-      document.getElementById("teksti").style.color = "yellow";
-    }
+        function vaihdaVari() {
+        
+            document.getElementById("teksti").style.color = "yellow";
+        }
   </script>
 
 
