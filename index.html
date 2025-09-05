@@ -9,13 +9,33 @@
     </style>
 </head>
 <body>
-    <h1>Testi A</h1>
+    <h1 id="teksti">Hei maailma. Minä vaihdan väriä</h1>
     <h2>Pienempi otsikko</h2>
     <p>Tämä on vaan testailua ja kivaa</p>
     <p id="paivays"></p>
-
+    <button onclick="changeTextColor(this)">Vaihda väriä</button>  
     <script>
         const pvm = new Date();
         document.getElementById("paivays").innerHTML = pvm;
+
+        function changeTextColor(button) {
+            // Muuttaa painikkeen sisällä olevan tekstin värin punaiseksi
+            button.style.color = 'red';
+    }
     </script>
+     
+
+  <button onclick="vaihdaVari()">Vaihda tekstin väriä</button>
+
+  <script>
+   
+    function vaihdaVari() {
+    
+      document.getElementById("teksti").style.color = "yellow";
+    }
+  </script>
+
+
+</body>
+</html>  
 </body>
